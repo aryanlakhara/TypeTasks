@@ -1,0 +1,113 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f5fb;
+  color: #22223b;
+}
+
+.wrap {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px #00000010;
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: #6741d9;
+}
+
+p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.addrow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #6741d9;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5230b5;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.chips button {
+  background: #eeeafc;
+  color: #6741d9;
+}
+
+.chips button.active {
+  background: #6741d9;
+  color: white;
+}
+
+#list {
+  padding: 0;
+  list-style: none;
+}
+
+li.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 14px;
+  border: 1px solid #e2e6f0;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+li.task span {
+  flex: 1;
+}
+
+@media (max-width: 550px) {
+  .wrap {
+    margin: 15px;
+    padding: 18px;
+  }
+
+  .addrow {
+    flex-wrap: wrap;
+  }
+
+  input {
+    flex-basis: 100%;
+  }
+}
